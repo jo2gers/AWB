@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqkvrsjv5qi3w"]
+
+[ext_resource type="Script" path="res://scripts/card.gd" id="1_8vhk5"]
+[ext_resource type="Texture2D" uid="uid://dqt5tsriduia3" path="res://assets/card/template.png" id="2_opp58"]
+
+[node name="Card" type="Node2D"]
+script = ExtResource("1_8vhk5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_opp58")
+
+[node name="cardDetails" type="RichTextLabel" parent="."]
+offset_left = -163.0
+offset_top = 97.0
+offset_right = 160.0
+offset_bottom = 234.0
+bbcode_enabled = true
+
+[node name="cardValue" type="RichTextLabel" parent="."]
+offset_left = -197.0
+offset_top = -273.0
+offset_right = -129.0
+offset_bottom = -207.0
+bbcode_enabled = true
+
+[node name="cardAttack" type="RichTextLabel" parent="."]
+offset_left = -212.0
+offset_top = 207.0
+offset_right = -144.0
+offset_bottom = 273.0
+bbcode_enabled = true
+
+[node name="cardLife" type="RichTextLabel" parent="."]
+offset_left = 141.0
+offset_top = 214.0
+offset_right = 209.0
+offset_bottom = 280.0
+bbcode_enabled = true
+text = "999"
+scroll_active = false
+tab_size = 7
